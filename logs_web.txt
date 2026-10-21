@@ -1,0 +1,142 @@
+
+> ai-video-studio@0.1.0 dev:web
+> npm run dev -w @studio/web
+
+
+> @studio/web@0.1.0 dev
+> next dev
+
+   ▲ Next.js 15.1.6
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.100.24:3000
+
+ ✓ Starting...
+ ✓ Ready in 2.9s
+ ○ Compiling /api/[...route] ...
+ ⚠ ../../packages/media/src/ffmpeg.ts
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+../../packages/media/src/ffmpeg.ts
+../../packages/media/src/index.ts
+../../packages/core/src/auth.ts
+../../packages/core/src/index.ts
+./src/app/api/[...route]/route.ts
+ POST /api/auth/login 200 in 3962ms
+ POST /api/projects/cmsqw5h5f0013v1a8o4a1r868/renders 202 in 61ms
+ GET /api/files/voiceovers/cmsqw5h39000wv1a82o3xpabm/cmsqw5h5f0013v1a8o4a1r868/0-1db880df52.wav?e=1786597682308&s=829d9fe6f9c4a8eb1380b6ae3cb1961803e32acef34000c2c87c8aef39cf6a7b 206 in 42ms
+ GET /api/files/voiceovers/cmsqw5h39000wv1a82o3xpabm/cmsqw5h5f0013v1a8o4a1r868/0-1db880df52.wav?e=1786597682308&s=829d9fe6f9c4a8eb1380b6ae3cb1961803e32acef34000c2c87c8aef39cf6a7b 206 in 18ms
+ GET /api/files/voiceovers/cmsqw5h39000wv1a82o3xpabm/cmsqw5h5f0013v1a8o4a1r868/1-395e014680.wav?e=1786597682309&s=021e99eb2b96fbf632125287bb8f62cf980d654b03e94c715eaaa6c387450570 206 in 19ms
+ GET /api/files/voiceovers/cmsqw5h39000wv1a82o3xpabm/cmsqw5h5f0013v1a8o4a1r868/1-395e014680.wav?e=1786597682309&s=021e99eb2b96fbf632125287bb8f62cf980d654b03e94c715eaaa6c387450570 206 in 18ms
+ GET /api/files/voiceovers/cmsqw5h39000wv1a82o3xpabm/cmsqw5h5f0013v1a8o4a1r868/2-3ae4b67535.wav?e=1786597682309&s=c5659941e0a0ad08ff0ff3cc9cbe94e833677d93815c28fce353d26b3f0cd7c0 206 in 36ms
+ GET /api/files/voiceovers/cmsqw5h39000wv1a82o3xpabm/cmsqw5h5f0013v1a8o4a1r868/2-3ae4b67535.wav?e=1786597682309&s=c5659941e0a0ad08ff0ff3cc9cbe94e833677d93815c28fce353d26b3f0cd7c0 206 in 20ms
+ GET /api/files/voiceovers/cmsqw5h39000wv1a82o3xpabm/cmsqw5h5f0013v1a8o4a1r868/3-6c777a1d9b.wav?e=1786597682309&s=5439a09648d320ea8f4b1fb8c74191322af9e74c5825be0744da3b4c380dd3f0 206 in 35ms
+ GET /api/files/voiceovers/cmsqw5h39000wv1a82o3xpabm/cmsqw5h5f0013v1a8o4a1r868/3-6c777a1d9b.wav?e=1786597682309&s=5439a09648d320ea8f4b1fb8c74191322af9e74c5825be0744da3b4c380dd3f0 206 in 24ms
+ GET /api/files/voiceovers/cmsqw5h39000wv1a82o3xpabm/cmsqw5h5f0013v1a8o4a1r868/4-ab3e7ce033.wav?e=1786597682309&s=3d320c7a2f288f518cc56f75b3e17dbc37344a03f1f1e8cf6cf955319ea74021 206 in 21ms
+ GET /api/files/voiceovers/cmsqw5h39000wv1a82o3xpabm/cmsqw5h5f0013v1a8o4a1r868/4-ab3e7ce033.wav?e=1786597682309&s=3d320c7a2f288f518cc56f75b3e17dbc37344a03f1f1e8cf6cf955319ea74021 206 in 23ms
+ POST /api/auth/login 200 in 113ms
+ GET /api/jobs/cmsqxuef60003v1y0j9qeaqy2 200 in 12ms
+ POST /api/auth/login 200 in 193ms
+ GET /api/jobs/cmsqxuef60003v1y0j9qeaqy2 200 in 17ms
+ HEAD /api/files/renders/cmsqw5h39000wv1a82o3xpabm/cmsqw5h5f0013v1a8o4a1r868/cmsqxuef60003v1y0j9qeaqy2.mp4?e=1786676905902&s=50b448fc22c1476684fa5d67258a6d4b0e700a8eb751d289417c3c19e789633d 200 in 27ms
+ GET /api/health 200 in 18ms
+ ⚠ ../../packages/media/src/ffmpeg.ts
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+../../packages/media/src/ffmpeg.ts
+../../packages/media/src/index.ts
+../../packages/core/src/auth.ts
+../../packages/core/src/index.ts
+./src/app/api/[...route]/route.ts
+ ✓ Compiled / in 3.8s (644 modules)
+ GET / 200 in 4132ms
+ ⚠ ../../packages/media/src/ffmpeg.ts
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+../../packages/media/src/ffmpeg.ts
+../../packages/media/src/index.ts
+../../packages/core/src/auth.ts
+../../packages/core/src/index.ts
+./src/app/api/[...route]/route.ts
+ GET /api/auth/me 200 in 545ms
+ ○ Compiling /api/[...route] ...
+ ⚠ ../../packages/media/src/ffmpeg.ts
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+../../packages/media/src/ffmpeg.ts
+../../packages/media/src/index.ts
+../../packages/core/src/auth.ts
+../../packages/core/src/index.ts
+./src/app/api/[...route]/route.ts
+ ⚠ ../../packages/media/src/ffmpeg.ts
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+../../packages/media/src/ffmpeg.ts
+../../packages/media/src/index.ts
+../../packages/core/src/auth.ts
+../../packages/core/src/index.ts
+./src/app/api/[...route]/route.ts
+ GET /register 200 in 702ms
+ GET /register 200 in 21ms
+ POST /api/auth/register 201 in 182ms
+[03:25:48] [32mINFO[39m (studio): [36memail (dev): Verify your email[39m
+    [35mto[39m: "adeel@mail.com"
+    [35msubject[39m: "Verify your email"
+    [35mbodyPreview[39m: "Hello Adeel,\n\nVerify your email address to activate your account:\nhttp://localhost:3000/verify-email?token=3e2b471aafa69dcdc2799cf2009d505e03a6d715af3fac0df35f1afcca29f90d\n\nThis link expires in 24 hours."
+ ⚠ ../../packages/media/src/ffmpeg.ts
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+../../packages/media/src/ffmpeg.ts
+../../packages/media/src/index.ts
+../../packages/core/src/auth.ts
+../../packages/core/src/index.ts
+./src/app/api/[...route]/route.ts
+ ⚠ ../../packages/media/src/ffmpeg.ts
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+../../packages/media/src/ffmpeg.ts
+../../packages/media/src/index.ts
+../../packages/core/src/auth.ts
+../../packages/core/src/index.ts
+./src/app/api/[...route]/route.ts
+ GET /dashboard 200 in 722ms
+ ⚠ ../../packages/media/src/ffmpeg.ts
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+../../packages/media/src/ffmpeg.ts
+../../packages/media/src/index.ts
+../../packages/core/src/auth.ts
+../../packages/core/src/index.ts
+./src/app/api/[...route]/route.ts
+ ⚠ ../../packages/media/src/ffmpeg.ts
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+../../packages/media/src/ffmpeg.ts
+../../packages/media/src/index.ts
+../../packages/core/src/auth.ts
+../../packages/core/src/index.ts
+./src/app/api/[...route]/route.ts
+ GET /login 200 in 505ms
+ GET /login 200 in 17ms
+ POST /api/auth/login 200 in 192ms
+ GET /dashboard 200 in 16ms
+ GET /dashboard 200 in 14ms
+ GET /login 200 in 38ms
+ GET /login 200 in 23ms
+ POST /api/auth/login 200 in 103ms
+ GET /dashboard 200 in 10ms
+ GET /dashboard 200 in 12ms
+ GET /login 200 in 35ms
+ GET /login 200 in 28ms
+ GET / 200 in 33ms
+ GET / 200 in 103ms
+ GET /api/auth/me 200 in 25ms
+ GET /api/realtime 200 in 74734ms

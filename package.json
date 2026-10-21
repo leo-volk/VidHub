@@ -1,0 +1,38 @@
+{
+  "name": "ai-video-studio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Production-grade AI Video Automation Studio: Idea -> Script -> Scenes -> Assets -> Voiceover -> Subtitles -> Timeline -> Preview -> Render -> Export -> YouTube",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:web": "npm run dev -w @studio/web",
+    "dev:worker": "npm run dev -w @studio/worker",
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "db:migrate": "npm run db:migrate -w @studio/database",
+    "db:seed": "npm run db:seed -w @studio/database",
+    "db:studio": "npm run db:studio -w @studio/database",
+    "worker": "npm run dev -w @studio/worker",
+    "renderer": "npm run dev -w @studio/renderer",
+    "check": "npm run typecheck && npm run lint && npm run test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.5",
+    "cross-env": "^7.0.3",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  }
+}

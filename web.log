@@ -1,0 +1,57 @@
+
+> ai-video-studio@0.1.0 dev:web
+> npm run dev -w @studio/web
+
+
+> @studio/web@0.1.0 dev
+> next dev
+
+   ▲ Next.js 15.1.6
+   - Local:        http://localhost:3000
+   - Network:      http://10.211.79.83:3000
+
+ ✓ Starting...
+ ✓ Ready in 2.8s
+ ○ Compiling /api/[...route] ...
+ ⚠ ../../packages/media/src/ffmpeg.ts
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+../../packages/media/src/ffmpeg.ts
+../../packages/media/src/index.ts
+../../packages/core/src/auth.ts
+../../packages/core/src/index.ts
+./src/app/api/[...route]/route.ts
+ POST /api/auth/login 200 in 3255ms
+ POST /api/projects/cmsqw5h5f0013v1a8o4a1r868/renders 202 in 47ms
+ GET /api/jobs/cmsqwcssm0003v1mcil24i7rv 200 in 24ms
+ ⚠ ../../packages/media/src/ffmpeg.ts
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+../../packages/media/src/ffmpeg.ts
+../../packages/media/src/index.ts
+../../packages/core/src/auth.ts
+../../packages/core/src/index.ts
+./src/app/api/[...route]/route.ts
+ POST /api/auth/login 200 in 251ms
+ POST /api/projects/cmsqw5h5f0013v1a8o4a1r868/renders 202 in 25ms
+ GET /api/jobs/cmsqwdcoe0009v1mcvnk1kxib 200 in 83ms
+ GET /api/jobs/cmsqwdcoe0009v1mcvnk1kxib 200 in 22ms
+ GET /api/files/voiceovers/cmsqw5h39000wv1a82o3xpabm/cmsqw5h5f0013v1a8o4a1r868/0-1db880df52.wav?e=1786595207112&s=698f27999cca6730200cce35ada2aa02b3043e7debc8382174e2a012e6d13078 401 in 10ms
+ GET /api/jobs/cmsqwdcoe0009v1mcvnk1kxib 200 in 30ms
+ GET /api/files/voiceovers/cmsqw5h39000wv1a82o3xpabm/cmsqw5h5f0013v1a8o4a1r868/0-1db880df52.wav?e=1786595207112&s=698f27999cca6730200cce35ada2aa02b3043e7debc8382174e2a012e6d13078 401 in 15ms
+ POST /api/auth/login 200 in 115ms
+ GET /api/projects/cmsqw5h5f0013v1a8o4a1r868/manifest 200 in 25ms
+ POST /api/auth/login 200 in 102ms
+ GET /api/projects/cmsqw5h5f0013v1a8o4a1r868/manifest 200 in 24ms
+ POST /api/auth/login 200 in 106ms
+ GET /api/projects/cmsqw5h5f0013v1a8o4a1r868/manifest 200 in 12ms
+ ✓ Compiled /api/[...route] in 34ms
+npm error Lifecycle script `dev` failed with error:
+npm error code 4294967295
+npm error path C:\Users\Adeel\openchammber projects\ai-video-studio\apps\web
+npm error workspace @studio/web@0.1.0
+npm error location C:\Users\Adeel\openchammber projects\ai-video-studio\apps\web
+npm error command failed
+npm error command C:\WINDOWS\system32\cmd.exe /d /s /c next dev

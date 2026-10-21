@@ -1,0 +1,44 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: web
+    ports:
+      - "3000:3000"
+    env_file: .env
+    environment:
+      - DATABASE_URL=file:./dev.db
+      - STORAGE_LOCAL_DIR=/app/storage
+      - REDIS_URL=redis://redis:6379
+    volumes:
+      - studio-storage:/app/storage
+    depends_on:
+      - redis
+    restart: unless-stopped
+
+  worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: worker
+    env_file: .env
+    environment:
+      - DATABASE_URL=file:./dev.db
+      - STORAGE_LOCAL_DIR=/app/storage
+      - REDIS_URL=redis://redis:6379
+    volumes:
+      - studio-storage:/app/storage
+    depends_on:
+      - redis
+      - web
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+
+volumes:
+  studio-storage:

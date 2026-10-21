@@ -1,0 +1,18 @@
+
+> ai-video-studio@0.1.0 dev:worker
+> npm run dev -w @studio/worker
+
+
+> @studio/worker@0.1.0 dev
+> tsx watch src/index.ts
+
+[03:07:33] [32mINFO[39m (studio): [36mworker starting (queue=memory)[39m
+    [35mworkerId[39m: "worker-23568-f4d0bf"
+[03:07:33] [32mINFO[39m (studio): [36mworker ready[39m
+[03:07:33] [32mINFO[39m (studio): [36mworker health endpoint listening[39m
+    [35mport[39m: 8787
+[03:08:02] [32mINFO[39m (studio): [36mjob started[39m
+    [35mjobId[39m: "cmsqxuef60003v1y0j9qeaqy2"
+    [35mtype[39m: "render"
+[03:08:25] [32mINFO[39m (studio): [36mjob completed[39m
+    [35mjobId[39m: "cmsqxuef60003v1y0j9qeaqy2"
